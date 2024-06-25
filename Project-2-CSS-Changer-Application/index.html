@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar CSS Via Controles Deslizantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Altere o CSS da imagem a baixo! Com a ajuda dos Controles Deslizantes</h1>
+        <span class="cabecalho">JavaScript</span>
+
+        <div class="controlador-css">
+            <label for="cor">Cor Base</label>
+            <input type="color" name="cor" id="cor" value="#ff8500">
+
+            <label for="largura">Largura</label>
+            <input 
+            type="range" 
+            name="largura" 
+            id="largura"
+            min="0"
+            max="100"
+            value="50"
+            data-sizing="%"
+            >
+
+            <label for="raio-da-borda">Raio da borda</label>
+            <input 
+            type="range" 
+            name="raio-da-borda" 
+            id="raio-da-borda"
+            min="0"
+            max="100"
+            value="15"
+            data-sizing="px"
+            >
+
+            <label for="preenchimento">Preenchimento</label>
+            <input 
+            type="range" 
+            name="preenchimento" 
+            id="preenchimento"
+            min="10"
+            max="200"
+            value="20"
+            data-sizing="px"
+            >
+
+            <label for="borrao">Borrão</label>
+            <input 
+            type="range" 
+            name="borrao" 
+            id="borrao"
+            min="0"
+            max="25"
+            value="0"
+            data-sizing="px"
+            >
+        </div>
+
+        <img src="images/beija-flor.jpg" alt="Imagem de um beija-flor">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
