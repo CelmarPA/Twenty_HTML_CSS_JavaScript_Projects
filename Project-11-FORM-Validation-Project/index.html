@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <h1>Criar Conta</h1>
+        </div>
+        <form id="formulario" class="formulario">
+            <div class="form-controle">
+                <label for="usuario">Nome e sobrenome</label>
+                <input type="text" placeholder="Nome" class="usuario">
+                <small class="erro"></small>
+            </div>
+
+            <div class="form-controle">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="E-mail" class="email">
+                <small class="erro"></small>
+            </div>
+
+            <div class="form-controle">
+                <label for="senha">Senha</label>
+                <input type="password" placeholder="Senha" class="senha">
+                <small class="erro"></small>
+            </div>
+            <div class="form-controle">
+                <label for="senhaVerificacao">Verificar Senha</label>
+                <input type="passaword" placeholder="Digite sua senha novamente" class="senhaVerificacao">
+                <small class="erro"></small>
+            </div>
+
+            <button type="submit">Criar</button>
+        </form>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>

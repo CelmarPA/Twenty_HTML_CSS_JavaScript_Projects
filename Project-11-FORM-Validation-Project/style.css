@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #ffa6b7, #1e6faf);
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: linear-gradient(to bottom, #fff, #f4f7f9);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+.cabecalho {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+}
+
+form {
+    padding: 30px 40px;
+}
+
+.form-controle {
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.form-controle:hover {
+    transform: translateY(-5px);
+}
+
+.form-controle label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-controle input {
+    border: 2px solid #f7f7f7;
+    border-radius: 4px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-controle input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-controle.sucesso input {
+    border-color: #2ecc71;
+}
+
+.form-controle small {
+    color: #e74131;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.form-controle.fail small {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.formulario button {
+    background-color: #0ed2f7;
+    border: 2px solid #84bcc7;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: backgound-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #84bcc7;
+}
