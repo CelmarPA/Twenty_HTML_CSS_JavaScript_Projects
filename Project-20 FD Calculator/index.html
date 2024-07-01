@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador FD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculador FD</h1>
+        <div class="grupo-form">
+            <label for="valor-inicial">Valor Inicial:</label>
+            <input type="number" name="valor-inicial" id="valor-inicial" placeholder="Digite o valor inicial">
+        </div>
+
+        <div class="grupo-form">
+            <label for="juros">Taxa de juros:</label>
+            <input type="number" name="juros" id="juros" placeholder="Digite os juros">
+        </div>
+
+        <div class="grupo-form">
+            <label for="periodo">Período (em anos):</label>
+            <input type="number" name="periodo" id="periodo" placeholder="Digite o periodo">
+        </div>
+
+        <button id="calcularBtn" class="calcular-btn">Calcular</button>
+
+        <p id="resultado" class="resultado">Valor no vencimento:</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

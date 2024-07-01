@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #a8caa5;
+}
+
+.piano-container {
+    padding: 10px;
+}
+
+h1 {
+    margin-top: 0;
+    padding: 0;
+}
+
+button {
+    width: 60px;
+    height: 200px;
+    margin: 2px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tecla-branca {
+    background-color: aliceblue;
+}
+
+.tecla-preta {
+    background-color: black;
+    color: aliceblue;
+}
